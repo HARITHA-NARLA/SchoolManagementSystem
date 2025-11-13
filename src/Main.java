@@ -1,7 +1,6 @@
 import java.io.*;
 import java.util.*;
 
-// ---------- Base class ----------
 class Person implements Serializable {
     private static final long serialVersionUID = 1L;
     protected String name;
@@ -21,7 +20,7 @@ class Person implements Serializable {
     }
 }
 
-// ---------- Derived classes ----------
+// Derived classes
 class Student extends Person {
     private static final long serialVersionUID = 1L;
     private String studentId;
@@ -54,7 +53,7 @@ class Teacher extends Person {
     }
 }
 
-// ---------- Main system class ----------
+// Main system class
 public class Main {
     private static final String FILE_NAME = "schoolData.ser";
     private static List<Person> people = new ArrayList<>();
